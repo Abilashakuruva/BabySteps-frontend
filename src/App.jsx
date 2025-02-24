@@ -4,6 +4,8 @@ import { Routes,Route } from 'react-router-dom'
 import DoctorList from './components/DoctorList'
 import DoctorDetails from './pages/DoctorDetails'
 
+import './App.css'
+
 const App = () => {
   return (
     

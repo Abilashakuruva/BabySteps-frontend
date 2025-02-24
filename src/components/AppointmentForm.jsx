@@ -34,8 +34,8 @@ const AppointmentForm = ({ doctorId, slot }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>Book Appointment for {slot}</h3>
-      <input value={patientName} onChange={(e) => setPatientName(e.target.value)} placeholder="Patient Name" required />
+      <h3 className="booktitle">Book Appointment for {slot}</h3>
+      <input value={patientName} onChange={(e) => setPatientName(e.target.value)} placeholder="Patient Name" required className="patientname" />
       <select value={appointmentType} onChange={(e) => setAppointmentType(e.target.value)}>
         <option value="Routine Check-Up">Routine Check-Up</option>
         <option value="Ultrasound">Ultrasound</option>
@@ -47,7 +47,7 @@ const AppointmentForm = ({ doctorId, slot }) => {
         <option value="Early Pregnancy Tips">Early Pregnancy Tips</option>
         <option value="ENT">ENT</option>
       </select>
-      <button type="submit">Book</button>
+      <button type="submit" className="bookbtn">Book</button>
     </form>
   );
 };

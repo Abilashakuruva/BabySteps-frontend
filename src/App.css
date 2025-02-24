@@ -1,0 +1,73 @@
+
+/*home*/
+.h1{
+    color: red;
+}
+.image {
+    margin: 2rem;
+}
+.image img{
+    height: 400px;
+    width: 800px;
+}
+/*doctorlist*/
+.doctorslistsec{
+    background-color: aqua;
+    height: 100vh;
+}
+.doctorslist{
+    padding: 5rem;
+       
+   
+}
+
+.doctors-image{
+    margin: 2rem;    
+}
+
+.doctors-img{
+    height: 500px;
+    width: 700px;
+}
+/* doctors-details*/
+
+.doctor-details{   
+    background-color: bisque;
+    height: 100vh;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.doctor-details-card h2{
+    
+    color: red;
+    
+}
+
+.booktitle{
+    color: red;
+}
+
+.patientname{
+    margin-right:10px ;
+}
+
+.bookbtn{
+    background-color: hsl(228, 87%, 63%);
+    margin-left: 10px;
+
+}
+
+.availableslot{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.availableslot h3{
+    color: red;
+
+}
+.slotbtn{
+    margin:5px ;
+
+}

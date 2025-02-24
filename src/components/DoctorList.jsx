@@ -10,7 +10,10 @@ const DoctorList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="doctorslistsec d-flex flex-row justify-content-center" >
+
+    <div className="doctorslist">
+      
       <h2>Doctors</h2>
       <ul>
         {doctors.map((doctor) => (
@@ -19,6 +22,13 @@ const DoctorList = () => {
           </li>
         ))}
       </ul>
+      </div>
+
+      <div className='doctors-image'>
+        <img src='/assets/doctors.jpeg' className='doctors-img'/>
+      </div>
+      
+    
     </div>
   );
 };

@@ -11,11 +11,11 @@ const AvailableSlots = ({ doctorId, date, onSelectSlot }) => {
   }, [doctorId, date]);
 
   return (
-    <div>
+    <div className="availableslot">
       <h3>Available Slots</h3>
       {slots.length > 0 ? (
         slots.map((slot) => (
-          <button key={slot} onClick={() => onSelectSlot(slot)}>
+          <button key={slot} onClick={() => onSelectSlot(slot)} className="slotbtn">
             {slot}
           </button>
         ))
