@@ -25,12 +25,17 @@ const AppointmentForm = ({ doctorId, slot }) => {
 
     try {
       await bookAppointment(appointmentData);
+      console.log(appointmentData)
       alert("Appointment booked!");
     } catch (error) {
       console.error("Error booking appointment:", error);
       alert("Error booking appointment");
     }
   };
+
+
+
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -48,6 +53,8 @@ const AppointmentForm = ({ doctorId, slot }) => {
         <option value="ENT">ENT</option>
       </select>
       <button type="submit" className="bookbtn">Book</button>
+      
+
     </form>
   );
 };

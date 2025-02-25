@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000";
-//const API_URL = "http://localhost:5000";
+//export const API_URL = "http://localhost:5000";
+export const API_URL = "https://babysteps-backend-mww3.onrender.com";
 
 export const getDoctors = async () => {
   const response = await axios.get(`${API_URL}/doctors`);
